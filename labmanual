@@ -132,34 +132,35 @@
   <div class="semester-container">
     <div class="semester-card">
       <h3>Lab Task 1</h3>
-      <a href="lab1.html">View Full Lab</a>
+      <a href="lab1">View Full Lab</a>
     </div>
 
     <div class="semester-card">
       <h3>Lab Task 2</h3>
-      <a href="lab2.html">View Full Lab</a>
+      <a href="lab2">View Full Lab</a>
     </div>
 
     <div class="semester-card">
       <h3>Lab Task 3</h3>
-      <a href="lab3.html">View Full Lab</a>
+      <a href="lab3">View Full Lab</a>
     </div>
 
     <div class="semester-card">
       <h3>Lab Task 4</h3>
-      <a href="lab4.html">View Full Lab</a>
+      <a href="lab4">View Full Lab</a>
     </div>
 
     <div class="semester-card">
       <h3>Lab Task 5</h3>
-      <a href="lab5.html">View Full Lab</a>
+      <a href="lab5">View Full Lab</a>
     </div>
 
     <div class="semester-card">
       <h3>Lab Task 6</h3>
-      <a href="lab6.html">View Full Lab</a>
+      <a href="lab6">View Full Lab</a>
     </div>
   </div>
 
 </body>
 </html>
+
