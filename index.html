@@ -3,100 +3,163 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web Development Projects</title>
+  <title>Web Technologies</title>
   <style>
+    /* -------- GLOBAL STYLE -------- */
     body {
-      font-family: "Poppins", sans-serif;
+      font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background: linear-gradient(135deg, #e9f1f7, #ffffff);
-      color: #333;
+      padding: 0;
+      background: linear-gradient(135deg, #2e1437, #4c2731, #5c5470);
+      color: #fafffe;
       text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    header {
-      background-color: #0078d7;
+    /* -------- HEADER SECTION -------- */
+    h5 {
+      margin: 15px 0;
+    }
+
+    h5 a {
+      background-color: #fafffe;
+      color: #4c2731;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 18px;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h5 a:hover {
+      background-color: #f48fb1;
       color: white;
-      padding: 20px 0;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transform: translateY(-2px);
     }
 
     h1 {
-      margin: 0;
-      font-size: 2em;
+      font-size: 2.2em;
+      margin-top: 10px;
+      color: #ffffff;
+      text-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
+      border-bottom: 3px solid #ffffff;
+      display: inline-block;
+      padding-bottom: 8px;
     }
 
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 40px;
-      max-width: 1100px;
-      margin: auto;
+    h2, h3 {
+      margin: 5px 0;
+      font-weight: 400;
+      color: #e5e5e5;
     }
 
-    .card {
-      background-color: white;
+    /* -------- LAB CARDS CONTAINER -------- */
+    .semester-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin: 50px 0;
+      padding: 0 20px;
+    }
+
+    /* -------- INDIVIDUAL LAB CARD -------- */
+    .semester-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
       border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      padding: 25px;
-      transition: transform 0.3s, box-shadow 0.3s;
+      padding: 25px 20px;
+      width: 250px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    .semester-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
     }
 
-    a {
+    .semester-card h3 {
+      color: #fff;
+      margin-bottom: 15px;
+      font-size: 1.2em;
+    }
+
+    .semester-card a {
       text-decoration: none;
-      color: #0078d7;
-      font-weight: bold;
+      color: #4c2731;
+      font-weight: 600;
+      background: #fafffe;
+      padding: 10px 15px;
+      border-radius: 25px;
+      display: inline-block;
+      transition: 0.3s ease;
+      box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2);
     }
 
-    footer {
-      margin-top: 30px;
-      padding: 15px;
-      background-color: #f0f0f0;
-      font-size: 0.9em;
-      color: #666;
+    .semester-card a:hover {
+      background: #f48fb1;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    /* -------- RESPONSIVE DESIGN -------- */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .semester-card {
+        width: 85%;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>🌐 Web Development Projects</h1>
-    <p>Select a page to explore below</p>
-  </header>
 
-  <div class="container">
-    <div class="card">
-      <h3>🏠 Lab 1 Page</h3>
-      <p><a href="lab1.html">Open Page</a></p>
+  <h5><a href="Asad083.html">ABOUT ME</a></h5>
+
+  <h1>Web Technologies Handouts</h1>
+  <h2>COMSATS Abbottabad - BCE</h2>
+  <h3>Essa khan - 085</h3>
+
+  <div class="semester-container">
+    <div class="semester-card">
+      <h3>Lab Task 1</h3>
+      <a href="lab1.html">View Full Lab</a>
     </div>
 
-    <div class="card">
-      <h3>📄 Lab 3</h3>
-      <p><a href="lab3.html">Open Page</a></p>
+    <div class="semester-card">
+      <h3>Lab Task 2</h3>
+      <a href="lab2.html">View Full Lab</a>
     </div>
 
-    <div class="card">
-      <h3>📧 Lab 4</h3>
-      <p><a href="lab4.html">Open Page</a></p>
+    <div class="semester-card">
+      <h3>Lab Task 3</h3>
+      <a href="lab3.html">View Full Lab</a>
     </div>
 
-    <div class="card">
-      <h3>📚 Lab 5</h3>
-      <p><a href="lab5.html">Open Page</a></p>
+    <div class="semester-card">
+      <h3>Lab Task 4</h3>
+      <a href="lab4.html">View Full Lab</a>
     </div>
 
-    <div class="card">
-      <h3>📰 Lab Manual</h3>
-      <p><a href="labmanual.html">Open Page</a></p>
+    <div class="semester-card">
+      <h3>Lab Task 5</h3>
+      <a href="lab5.html">View Full Lab</a>
+    </div>
+
+    <div class="semester-card">
+      <h3>Lab Task 6</h3>
+      <a href="lab6.html">View Full Lab</a>
     </div>
   </div>
 
-  <footer>
-    © 2025 Web Development Projects | Designed by Essa Khan
-  </footer>
 </body>
 </html>
