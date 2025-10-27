@@ -1,40 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lab1</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Development Projects</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #e9f1f7, #ffffff);
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background-color: #0078d7;
+      color: white;
+      padding: 20px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 25px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    a {
+      text-decoration: none;
+      color: #0078d7;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 15px;
+      background-color: #f0f0f0;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
 </head>
-
 <body>
-    <h1>Essa Khan
+  <header>
+    <h1>🌐 Web Development Projects</h1>
+    <p>Select a page to explore below</p>
+  </header>
 
-        <h2>Computer Engineering</h2>
-        <h3>Web Technologies</h3>
-    </h1>
+  <div class="container">
+    <div class="card">
+      <h3>🏠 Lab 1 Page</h3>
+      <p><a href="lab1.html">Open Page</a></p>
+    </div>
 
-    <p>
-    <p>
-        My name is <b>Essa Khan</b>. I am a student of <i>Computer Engineering</i> who enjoys exploring new technologies
-        and creating </u>innovative solutions</u>. <br>
-        I am highly motivated to grow my knowledge in programming, software engineering, and web development.
-    </p>
+    <div class="card">
+      <h3>📄 Lab 3</h3>
+      <p><a href="lab3.html">Open Page</a></p>
+    </div>
 
+    <div class="card">
+      <h3>📧 Lab 4</h3>
+      <p><a href="lab4.html">Open Page</a></p>
+    </div>
 
-    <hr>
+    <div class="card">
+      <h3>📚 Lab 5</h3>
+      <p><a href="lab5.html">Open Page</a></p>
+    </div>
 
+    <div class="card">
+      <h3>📰 Lab Manual</h3>
+      <p><a href="labmanual.html">Open Page</a></p>
+    </div>
+  </div>
 
-    <!-- 4) Formatting examples -->
-    <p>
-        Some formatting demonstrations:<br>
-        - <b>Bold</b> highlights important text.<br>
-        - <i>Italic</i> emphasizes a word or phrase.<br>
-        - <u>Underline</u> can be used for emphasis.<br>
-
-    </p>
-    </p>
-
+  <footer>
+    © 2025 Web Development Projects | Designed by Essa Khan
+  </footer>
 </body>
-
 </html>
